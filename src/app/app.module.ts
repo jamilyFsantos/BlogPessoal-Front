@@ -10,6 +10,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { PaginaInicioComponent } from './pagina-inicio/pagina-inicio.component';
+import { TemaComponent } from './tema/tema.component';
 
 
 
@@ -22,6 +23,7 @@ import { PaginaInicioComponent } from './pagina-inicio/pagina-inicio.component';
     EntrarComponent,
     CadastrarComponent,
     PaginaInicioComponent,
+    TemaComponent,
     
     
   ],

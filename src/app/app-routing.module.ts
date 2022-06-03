@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { PaginaInicioComponent } from './pagina-inicio/pagina-inicio.component';
+import { TemaComponent } from './tema/tema.component';
 
 const routes: Routes = [
 
@@ -11,7 +12,9 @@ const routes: Routes = [
   {path:'entrar', component: EntrarComponent},
   {path:'cadastrar', component: CadastrarComponent},
 
-  {path:'pagina-inicio', component: PaginaInicioComponent}
+  {path:'pagina-inicio', component: PaginaInicioComponent},
+
+  {path:'tema', component: TemaComponent}
 ];
 
 @NgModule({
