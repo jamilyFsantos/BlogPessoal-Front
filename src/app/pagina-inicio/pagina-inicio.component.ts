@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'app-pagina-inicio',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaginaInicioComponent implements OnInit {
 
-  constructor() { }
+  /*para pegar a foto que o usuario colocou, para colocar na coluna da direita*/
+  foto = environment.foto
 
-  ngOnInit(): void {
+  constructor(
+    private router: Router
+  ) { }
+
+  ngOnInit() {
+    /*sempre que estrar na pagina inicio vai verificar se o token esta vazio, se tiver vai direcionar para pagina de login */
+    if(environment.token == ''){
+      alert('Seção expirada')
+      this.router.navigate(['/entrar'])
+
+    }
   }
 
 }

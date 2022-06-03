@@ -1,0 +1,23 @@
+.color{
+    background-color: rgb(2, 1, 15);
+}
+
+.fonte-54{
+    font-size: 54pt;
+}
+
+.fonte-18{
+    font-size: 18pt;
+}
+
+.corbut{
+    background-color: rgb(173, 42, 233)
+}
+
+.img{
+    border-radius: 40px;
+}
+
+.corfnt{
+    text-decoration-color: rgb(173, 42, 233);
+}

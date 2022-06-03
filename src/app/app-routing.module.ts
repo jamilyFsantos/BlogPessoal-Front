@@ -11,7 +11,7 @@ const routes: Routes = [
   {path:'entrar', component: EntrarComponent},
   {path:'cadastrar', component: CadastrarComponent},
 
-  {path:'paginaInicio', component: PaginaInicioComponent}
+  {path:'pagina-inicio', component: PaginaInicioComponent}
 ];
 
 @NgModule({

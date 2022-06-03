@@ -1,2 +1,5 @@
+<app-menu *ngIf="auth.logado()"></app-menu> <!--esse metodo auth vem do component.ts-->
+
 <router-outlet></router-outlet>
 
+<app-rodape *ngIf="auth.logado()"></app-rodape>
