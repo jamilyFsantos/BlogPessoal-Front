@@ -29,13 +29,13 @@ export class TemaComponent implements OnInit {
     this.findAllTemas() /*para que toda vez que iniciar a tema mostre todos os temas */
   }
 
-  findAllTemas(){ /*para listar  todos os temas */
+  findAllTemas(){ /*para listar  todos os temas usando o  get do service*/
     this.temaService.getAllTema().subscribe((resp: Tema[]) => {
       this.listaTemas = resp
     })
   }
 
-  cadastrar(){
+  cadastrar(){ /*para cadastrar um novo tema com o post do service */
     this.temaService.postTema(this.tema).subscribe((resp: Tema)=>{
       this.tema = resp
       alert("Tema cadastrado")

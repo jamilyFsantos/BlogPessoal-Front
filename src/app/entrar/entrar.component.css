@@ -5,7 +5,7 @@
 }
 
 body {
-    background:linear-gradient rgb(12, 13, 14);
+    background-color: rgb(12, 13, 14);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -26,4 +26,8 @@ h1 {
 
 .btn{
     background-color: rgb(173, 42, 233)
+}
+
+.color{
+    background-color: rgb(12, 13, 14);
 }
